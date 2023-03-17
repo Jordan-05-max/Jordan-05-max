@@ -11,7 +11,7 @@ speaker: Engine = pyttsx3.init()
 speaker.setProperty('rate', 112)
 voices = speaker.getProperty('voices')
 speaker.setProperty('voice', voices[1].id)
-speaker.say("hello Johnstone")
+speaker.say("Hello Johnstone")
 speaker.runAndWait()
 
 
