@@ -37,81 +37,81 @@ country = StringVar()
 # text entry
 entries_frame = tkinter.Frame(root, bg="#323FB4")
 entries_frame.pack(side=tkinter.TOP, fill=tkinter.X)
-title = tkinter.Label(entries_frame, text="Employee Recruitment System", font=("Baskervville", 18, "bold"),
+title = tkinter.Label(entries_frame, text="Employee Recruitment System", font=("Times New Roman", 18, "bold"),
                       bg="#323FB4", fg="white")
 title.grid(row=0, columnspan=2, padx=10, pady=10, sticky="w")
 
 # Name entry
-lblName = tkinter.Label(entries_frame, text="Name:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblName = tkinter.Label(entries_frame, text="Name:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblName.grid(column=0, row=1, pady=10, padx=10, sticky="w")
-txtName = tkinter.Entry(entries_frame, textvariable=name, font=("Baskervville", 16), width=30)
+txtName = tkinter.Entry(entries_frame, textvariable=name, font=("Times New Roman", 16), width=28)
 txtName.grid(column=1, row=1, padx=0, pady=10, sticky="w")
 
 # Age entry
-lblAge = tkinter.Label(entries_frame, text="Age:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblAge = tkinter.Label(entries_frame, text="Age:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblAge.grid(column=0, row=2, padx=10, pady=10, sticky="w")
-txtAge = tkinter.Entry(entries_frame, textvariable=age, font=("Times New Roman", 16), width=27)
+txtAge = tkinter.Entry(entries_frame, textvariable=age, font=("Times New Roman", 16), width=28)
 txtAge.grid(column=1, row=2, padx=0, pady=10, sticky="w")
 
 # DOB entry
-lblDOB = tkinter.Label(entries_frame, text="DOB:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblDOB = tkinter.Label(entries_frame, text="DOB:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblDOB.grid(column=0, row=3, padx=10, pady=10, sticky="w")
-txtDOB = ttk.Entry(entries_frame, textvariable=dob, font=("Times New Roman", 16), width=27)
+txtDOB = ttk.Entry(entries_frame, textvariable=dob, font=("Times New Roman", 16), width=28)
 txtDOB.grid(column=1, row=3, padx=0, pady=10, sticky="w")
 
 # Email entry
-lblEmail = tkinter.Label(entries_frame, text="Email:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblEmail = tkinter.Label(entries_frame, text="Email:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblEmail.grid(column=2, row=1, padx=10, pady=10, sticky="w")
-txtEmail = tkinter.Entry(entries_frame, textvariable=email, font=("Baskervville", 16), width=30)
+txtEmail = tkinter.Entry(entries_frame, textvariable=email, font=("Times New Roman", 16), width=28)
 txtEmail.grid(column=3, row=1, padx=0, pady=10, sticky="w")
 
 # Gender entry
-lblGender = tkinter.Label(entries_frame, text="Gender:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblGender = tkinter.Label(entries_frame, text="Gender:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblGender.grid(column=0, row=4, padx=10, pady=10, sticky="w")
-comboGender = ttk.Combobox(entries_frame, textvariable=gender, font=("Baskervville", 14), width=31, state="readonly")
+comboGender = ttk.Combobox(entries_frame, textvariable=gender, font=("Times New Roman", 14), width=28, state="readonly")
 comboGender['values'] = (" ", "Male", "Female", "Other")
 comboGender.grid(column=1, row=4, padx=0, pady=10, sticky="w")
 
 # Contact entry
-lblContact = tkinter.Label(entries_frame, text="Contact:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblContact = tkinter.Label(entries_frame, text="Contact:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblContact.grid(column=2, row=2, padx=10, pady=10, sticky="w")
-txtContact = tkinter.Entry(entries_frame, textvariable=contact, font=("Baskerville old face", 16), width=30)
+txtContact = tkinter.Entry(entries_frame, textvariable=contact, font=("Times New Roman", 16), width=28)
 txtContact.grid(column=3, row=2, padx=0, pady=10, sticky="w")
 
 # Company entry
-lblCompany = tkinter.Label(entries_frame, text="Select Company:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblCompany = tkinter.Label(entries_frame, text="Select Company:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblCompany.grid(column=2, row=3, padx=10, pady=10, sticky="w")
-comboCompany = ttk.Combobox(entries_frame, textvariable=company, font=("Baskervville", 16), width=28, state="readonly")
+comboCompany = ttk.Combobox(entries_frame, textvariable=company, font=("Times New Roman", 16), width=28, state="readonly")
 comboCompany['values'] = (
 " ", "Microsoft", "Omiraï", "Amazon", "Facebook", "Google", "IBM", "Cognizant", "Bosch", "Apple", "Samsung")
 comboCompany.grid(column=3, row=3, padx=0, pady=10, sticky="w")
 
 # Job entry
-lblJob = tkinter.Label(entries_frame, text="Select Job:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblJob = tkinter.Label(entries_frame, text="Select Job:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblJob.grid(column=2, row=4, padx=5, pady=10, sticky="w")
-comboJob = ttk.Combobox(entries_frame, textvariable=job, font=("Baskervville", 16), width=28, state="readonly")
+comboJob = ttk.Combobox(entries_frame, textvariable=job, font=("Times New Roman", 16), width=28, state="readonly")
 comboJob['values'] = (
 " ", "Computer Programmer", "Data Analyst", "Support Specialist", "IoT Architect", "Software Designer", "Software Engineer")
 comboJob.grid(column=3, row=4, padx=0, pady=10, sticky="w")
 
 # CGPA entry
-lblCGPA = tkinter.Label(entries_frame, text="CGPA:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblCGPA = tkinter.Label(entries_frame, text="CGPA:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblCGPA.grid(column=4, row=1, padx=5, pady=10, sticky="w")
 comboCGPA = ttk.Combobox(entries_frame, textvariable=CGPA, font=("Times New Roman", 16), width=28, state="readonly")
 comboCGPA['values'] = (" ", "5.0", "6.0", "7.0", "8.0", "9.0")
 comboCGPA.grid(column=5, row=1, padx=0, pady=10, sticky="w")
 
 # country entry
-lblCountry = tkinter.Label(entries_frame, text="Country:", font=("Baskervville", 16), bg="#323FB4", fg="white")
-lblCountry.grid(column=4, row=2, padx=5, pady=10, sticky="w")
-comboCountry = ttk.Combobox(entries_frame, textvariable=country, font=("Baskervville", 16), width=31, state="write")
+lblCountry = tkinter.Label(entries_frame, text="Country:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
+lblCountry.grid(column=4, row=2, padx=0, pady=0, sticky="w")
+comboCountry = ttk.Combobox(entries_frame, textvariable=country, font=("Times New Roman", 16), width=28, state="write")
 comboCountry['values'] = country_list.countries_for_language(lang="en", encoding="utf8")
-comboCountry.grid(column=5, row=2, padx=0, pady=10, sticky="w")
+comboCountry.grid(column=5, row=2, padx=0, pady=0, sticky="w")
 
 # Address entry
-lblAddress = tkinter.Label(entries_frame, text="Address:", font=("Baskervville", 16), bg="#323FB4", fg="white")
+lblAddress = tkinter.Label(entries_frame, text="Address:", font=("Times New Roman", 16), bg="#323FB4", fg="white")
 lblAddress.grid(column=0, row=5, padx=10, pady=10, sticky="nw")
-txtAddress = tkinter.Text(entries_frame, width=88, height=2, font=("Baskerville old face", 16))
+txtAddress = tkinter.Text(entries_frame, width=88, height=2, font=("Times New Roman", 16))
 txtAddress.grid(column=0, row=6, columnspan=6, padx=0, pady=10, sticky="w")
 
 
