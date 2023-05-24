@@ -8,3 +8,9 @@ engine.say('Hello sir, how may I help you, sir.')
  
 # run and wait method, it processes the voice commands.
 engine.runAndWait()
+
+
+""""if 1 <= x <= length:
+    index = x-1
+    y = list1[index]
+    p = fruits.get(y)"""

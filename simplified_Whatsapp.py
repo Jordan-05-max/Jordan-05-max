@@ -1,17 +1,17 @@
 import pyttsx3
 from pyttsx3 import Engine
 
-import time
+
 import pywhatkit as wh
 
 # initialising the whatsapp system
 wh.system()
+
 speaker: Engine = pyttsx3.init()
-# engine = pyttsx3.init()
-speaker.setProperty('rate', 112)
+speaker.setProperty('rate', 120)
 voices = speaker.getProperty('voices')
 speaker.setProperty('voice', voices[1].id)
-speaker.say("hello Johnstone")
+speaker.say("Hello Jordan")
 speaker.runAndWait()
 
 
@@ -19,7 +19,6 @@ speaker.runAndWait()
 def display_contact_list(contacts, contact_numbers):
     desired_contacts = []
     print("Choose the name of your contact here: ")
-    # time.sleep(1)
     speaker.say(" Choose the name of your contact here ")
     speaker.runAndWait()
     print("========================================")
@@ -52,6 +51,7 @@ def display_message_type():
 
     speaker.say("Please select the message type you want ")
     speaker.runAndWait()
+
     print("1 - Instantaneous Message  \n")
     print("2 - Planned Message\n")
     choice = input("Message type : ")
@@ -70,7 +70,7 @@ def getMessage():
     speaker.say("Please enter your message")
     speaker.runAndWait()
     message = input("Type your message: ")
-    time.sleep(1)
+
     speaker.say("The message entered is: " + message)
     speaker.runAndWait()
     return message
@@ -122,50 +122,3 @@ match message_type:
             print("Error while sending message")
 speaker.stop()
 
-# Create a variable phone_number that will take a phone number as string input
-# phone_number = phone_dict.get(input("Enter a name: "))
-"""print("Choose the name of your contact here: ")
-        print("========================================")
-        contact_list = phone_dict.keys()
-        for num,name in enumerate(contact_list):
-            print("{} - {}".format((num+1),name))
-
-        choice = input("Contact Choice : ")
-        if choice.isdigit() :
-            choice = int(choice)
-            if 1 <= choice <= 7 :
-                phone_number = phone_dict2.get(choice)
-
-            else :
-                print("Invalid Option")
-                exit()
-        else : 
-            raise Exception("Incorrect Input")"""
-"""try:
-    # choix = {"1": "message instantané", "2": "message programmé"}
-    # print("Take a choice", choix.values())
-    x = input("Take choice: ")
-    if(x == "1"):
-        try:
-            print("This is instantaneous message.")
-            # Create a variable msg that will take the message
-            msg_inst = input("Enter your message: ")
-            # sending an immediate message by setting default values only
-            wh.sendwhatmsg_instantly(phone_number, msg_inst, 15, True, 5)
-            print("Successfully Sent!")
-        except:
-            print("An error occurred","\n Send the instantaneous message again")
-    elif(x == "2"):
-        try:
-            print("This a programmed message.")
-            msg = input("Enter your message: ")
-            programmed_hour = int(input("input hour: "))
-            programmed_min = int(input("input minutes: "))
-            wh.sendwhatmsg(phone_number, msg, programmed_hour,programmed_min, 15, True, 5)
-        except:
-            #print("An error occurred","\n Send the programmed message again")
-except:
-    print("proposition out of scope""\nplease choose again!!")
-
-
-"""
