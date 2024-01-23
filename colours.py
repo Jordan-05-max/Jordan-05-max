@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 """from turtle import *
+=======
+from turtle import *
+>>>>>>> origin/main
 from colorsys import *
 
 bgcolor("black")
@@ -17,6 +21,7 @@ for i in range(n):
     rt(60)
 ht()
 done()
+<<<<<<< HEAD
 """
 from turtle import *
 color('red', 'yellow')
@@ -28,3 +33,5 @@ while True:
         break
 end_fill()
 done()
+=======
+>>>>>>> origin/main
