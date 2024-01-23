@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# <<<<<<< HEAD
 """from turtle import *
 =======
 from turtle import *
@@ -33,5 +33,5 @@ while True:
         break
 end_fill()
 done()
-=======
->>>>>>> origin/main
+
+
